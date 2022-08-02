@@ -1,0 +1,55 @@
+$primaryColor: #116500;
+$secondaryColor: #D6F1E4;
+$mainBackgroundColor: #2C2D2C;
+$secondaryBackgroundColor: #D6F1E4;
+$thirdBackgroundColor: #213C28;
+$primaryTextColor: #FFFFFF;
+$baseFont: 'Barlow', 'Regular', sans-serif;
+$secondaryFont: 'Offisde', 'Regular', sans-serif;
+
+// COMMON STYLE
+body {
+    color: $primaryTextColor;
+    font-family: $baseFont;
+    line-height: 1.9rem;
+    letter-spacing: 0.2px;
+}
+
+.headings {
+    @include fontSize(55);
+    font-family: $secondaryFont;
+    text-align: center;
+    font-weight: 400;
+}
+
+.logo {
+    @include fontSize(30);
+    font-family: $secondaryFont;
+    line-height: 1.5rem;
+}
+
+nav {
+    @include fontSize(30);
+    font-weight: bold;
+    line-height: 29px;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+.buttons {
+    @include fontSize(50);
+    font-family: $secondaryFont;
+    text-align: center;
+    line-height: 3.5rem;
+}
+
+// MAIN
+
+h2 {
+    color: $primaryColor;
+    padding: 50px;
+    margin: 0;
+}
