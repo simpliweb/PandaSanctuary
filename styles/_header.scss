@@ -1,0 +1,140 @@
+header {
+    background-image: url(../assets/header-image.png);
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+}
+
+.homeHeader {
+    position: relative;
+}
+
+.topHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    list-style: none;
+    padding-top: 20px;
+}
+
+.logo span {
+    display: block;
+}
+
+.topNav {
+    display: flex;
+    list-style: none;
+    margin-right: 40px;
+
+    li {
+        margin-right: 20px;
+    }
+}
+
+.hamburgerNav, .hamburgerOpen, .NavCloseIcon {
+    display: none;
+}
+
+#firstHeading {
+    @include fontSize(80);
+    line-height: 4rem;
+    text-align: left;
+    font-weight: 400;
+}
+
+#firstHeading span {
+    display: block;
+}
+
+.sideNav {
+    position: absolute;
+    line-height: 2rem;
+    top: 100px;
+    right: 0px;
+
+    ul {
+        list-style: none;
+    }
+}
+
+// MEDIA QUERY
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        width: 95%;
+    }
+
+    .hamburgerNav {
+        display: none;
+    }
+
+    #firstHeading {
+        @include fontSize(70);
+        line-height: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo {
+        @include fontSize(40);
+        line-height: 2rem;
+        margin: 10px;
+    }
+
+    .topNav {
+        display: none;
+    }
+
+    .hamburgerNav {
+        @include fontSize(70);
+        padding: 10px;
+        margin-top: 20px;
+        display: block;        
+        button {
+            background-color: transparent;
+            color: white;
+            border: none;
+            &:hover {
+                    cursor: pointer;
+                }
+            ul {
+                display: none;
+            }                     
+        } 
+        button:focus {
+            background: $thirdBackgroundColor;
+            @include fontSize(50);
+            .NavOpenIcon {
+                display: none;
+            }
+            .NavCloseIcon {
+                display: block;
+                margin-right: 0;
+                &:active {
+                    .NavCloseIcon {
+                        display: none;
+                    }
+                    .NavOpenIcon {
+                        display: block;
+                    }
+                }
+            }
+            ul {
+                display: block;
+                list-style: none;
+                padding-right: 40px;
+                line-height: 53px;
+            }
+        }      
+    } 
+    // Not sure if hamburger nav needs to function, couldn't get it to click when it's opened - will ask for assistance after feedback
+
+    .sideNav {
+        display: none;
+    }
+}

@@ -11,12 +11,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Sans:wght@400;700&family=Offside&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>Assignment 1</title>
 </head>
 
 <body>
-    <header class="home">
+    <header class="home" id="home">
         <div class="wrapper homeHeader">
             <div class="topHeader">
                 <div class="logo">
@@ -25,10 +25,41 @@
                 <nav>
                     <div class="hamburgerNav">
                         <button>
-                            <i class="fa-solid fa-bars"></i>
-                        </button>
-                        <a href="#"></a>
-                    </div>
+                            <div class="NavOpenIcon">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                            <div class="NavCloseIcon">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#blog">Blog</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-snapchat"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </button>                        
+                    </div>                    
+                    
                     <ul class="topNav">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
@@ -66,9 +97,9 @@
         </div>
     </header>
     <!-- ENDS HEADER -->
-    
+
     <main>
-        <section class="about">
+        <section class="about" id="about">
             <div class="wrapper wrapperAbout">
                 <div class="about imgGallery">
                     <h2 class="headings" id="aboutTopHeading">Our New Friends</h2>
@@ -103,7 +134,7 @@
         </section>
         <!-- END ABOUT SECTION -->
 
-        <section class="blog">
+        <section class="blog" id="blog">
             <div class="wrapper blogWrapper">
                 <div class="blogTop">
                     <div class="blogTopInfo">
@@ -135,7 +166,7 @@
         </section>
         <!-- ENDS BLOG SECTION -->
 
-        <section class="contactFirst">
+        <section class="contactFirst" id="contact">
             <div class="wrapper topContact">
                 <div class="additionalLinks">
                     <ul>
