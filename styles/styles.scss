@@ -1,0 +1,10 @@
+// general
+@import 'setup';
+@import 'mixins';
+@import 'typography';
+
+// specifics
+@import 'body';
+@import 'header';
+@import 'main';
+@import 'footer';
